@@ -20,7 +20,7 @@
                     <li><a href="#multimedia">MultiMedia</a></li>
                     <li><a href="#more-information">More Information</a></li>
                     <li><a href="#copyright">Copyright Information</a></li>
-                    <li><a href="survey">Survey</a></li>
+                    <li><a href="#survey">Survey</a></li>
                 </ul>
             </nav>
         </header>
@@ -118,7 +118,59 @@
             </section>
 
             <section id="survey">
+                <hr>
+                <h2>Feedback Survey</h2>
 
+                <form>
+                    <fieldset>
+                        <legend>Your precious information</legend>
+                        
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name"><br><br>
+                        
+                        <label for="date">Gimme your birthdate</label>
+                        <input type="date" id="date" name="date"><br>
+
+                        <p>Now, tell me your favorite chips</p>
+                        <input type="radio" id="coffee" name="snack" value="coffee">
+                        <label for="coffee">Coffee</label><br>
+                        <input type="radio" id="cookie" name="snack" value="cookie">
+                        <label for="cookie">Cookies</label><br><br>
+
+                        <label>You should not have access to this page, how <em>exactly</em>
+                        did you find your way here?</label><br>
+                        <input type="checkbox" id="friend" name="source" value="friend">
+                        <label for="friend">Friend</label><br>
+                        <input type="checkbox" id="online" name="source" value="online">
+                        <label for="online">Online</label><br>
+                        <input type="checkbox" id="you" name="source" value="you">
+                        <label for="you">You</label><br><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Keep giving me information</legend>
+
+                        <label for="comments">Any thing you wanna tell me?</label><br>
+                        <textarea id="comments" name="comments" rows="4" cols="20"></textarea><br><br>
+
+                        <label for="major">Preferred Major:</label>
+                        <input list="majors" id="major" name="major">
+                        <datalist id="majors">
+                            <option value="Computer Science"></option>
+                            <option value="Computer Engineering"></option>
+                            <option value="Business..."></option>
+                        </datalist><br><br>
+
+                        <label for="rating">Now that you are here, rate this page</label>
+                        <select id="rating" name="rating">
+                            <option value="excellent">Excellent!</option>
+                            <option vlaue="good">Good (bruh)</option>
+                            <option value="okay">Okay (leave)</option>
+                        </select>
+                    </fieldset><br>
+
+                    <button type="submit">Submit and let me see your response</button>
+                </form>
             </section>
         </main>
 
