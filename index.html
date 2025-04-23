@@ -6,12 +6,19 @@
         <meta name="description" content="Meeting minutes">
         <meta name="author" content="Aryan Ahuja">
         <link rel="icon" href="sources/favicon-16x16.png">
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
-            <h1>Meeting Minutes</h1>
-            <h3>Table of Contents</h3>
+            <div class="title">
+                <h1 class="unifrakturmaguntia-regular">Meeting Minutes</h1>
+            </div>
+            <h3 id="table-of-contents">Table of Contents</h3>
             <nav>
                 <ul>
                     <li><a href="#most-recent">Most Recent Minutes</a></li>
@@ -29,9 +36,9 @@
         <main>
             <section id="most-recent">
                 <hr>
-                <h2>Minutes on Air Quality Index (AQI) Project</h2>
-                <div>
-                    <p><b>Description:</b> This project aims to build a neural network
+                <h2 class="h2-title">Minutes on Air Quality Index (AQI) Project</h2>
+                <div id="description">
+                    <p><b><span class="underline flex1">Description:</span></b> This project aims to build a neural network
                         which is <strong><em>customizable</em> by the user</strong>.<br>
                         Then, it accesses the OpenWeather API for the data across the past
                         10 years on air quality in a specific region.<br>
@@ -45,25 +52,33 @@
 
             <section id="second-most">
                 <hr>
-                <h2>Meetings on Customer Churn Project</h2>
-                <div>
-                    <p><b>Description:</b> This project aims to <strong>calculate the probability of 
+                <h2 class="h2-title">Meetings on Customer Churn Project</h2>
+                <div id="description">
+                    <p><b><span class="underline">Description:</span></b> This project aims to <strong>calculate the probability of 
                         retaining a customer</strong> based on various factors like: </p>
                 </div>
                 <ul>
-                    <li>Gender</li>
-                    <li>Age</li>
-                    <li>Location</li>
-                    <li>Tenure</li>
-                    <li>And more...</li>
+                    <div class="grid">
+                        <div class="grid-child"><li>Gender</li></div>
+                        <div class="grid-child"><li class="hidden">HIDDEN</li></div>
+                        <div class="grid-child"><li>Age</li></div>
+                        <div class="grid-child"><li class="hidden">HIDDEN</li></div>
+                        <div class="grid-child"><li>Location</li></div>
+                        <div class="grid-child"><li class="hidden">HIDDEN</li></div>
+                        <div class="grid-child"><li>Tenure</li></div>
+                        <div class="grid-child"><li class="hidden">HIDDEN</li></div>
+                        <div class="grid-child"><li>And more...</li></div>
+                    </div>
                 </ul>
 
                 <p>Once every <span>model</span> has been trained, the best <i>accuracy rate</i> is <em>90.25% (KNN)</em></p>
 
                 <ol>
-                    <li>K-Nearest Neighbors: 90.25%</li>
-                    <li>Logistic Regression: 82.84%</li>
-                    <li>Linear Regression: 82.73%</li>
+                    <div class="crazy flex">
+                        <div class="flex-child"><li>K-Nearest Neighbors: 90.25%</li></div>
+                        <div class="flex-child"><li>Logistic Regression: 82.84%</li></div>
+                        <div class="flex-child"><li>Linear Regression: 82.73%</li></div>
+                    </div>
                 </ol>
                 
             </section>
@@ -71,10 +86,10 @@
 
             <section id="third-most">
                 <hr>
-                <h2>Meetings on Breast Cancer Project</h2>
+                <h2 class="h2-title">Meetings on Breast Cancer Project</h2>
 
-                <div>
-                    <p><b>Description:</b> For the this last project, a Logistic Regression
+                <div id="description">
+                    <p><b><span class="underline">Description:</span></b> For the this last project, a Logistic Regression
                     model was trained to output either a 1/0 or Yes/No for breast cancer depending 
                     on the data for the patient.</p>
 
@@ -84,7 +99,7 @@
 
             <section id="multimedia">
                 <hr>
-                <h2>MultiMedia</h2>
+                <h2 class="h2-title">MultiMedia</h2>
 
                 <h4>Image</h4>
                 <img src="sources/android-chrome-192x192.png" alt="Alient Emoji">
@@ -105,7 +120,7 @@
 
             <section id="more-information">
                 <hr>
-                <h2>More Information</h2>
+                <h2 class="h2-title">More Information</h2>
                 <details>
                     <summary>Click for more information</summary>
                     <p>Haha jk, there is no more information!</p>
@@ -114,7 +129,7 @@
 
             <section id="survey">
                 <hr>
-                <h2>Feedback Survey</h2>
+                <h2 class="h2-title">Feedback Survey</h2>
 
                 <form>
                     <fieldset>
@@ -173,7 +188,7 @@
         <footer>
             <section id="copyright">
                 <hr>
-                <h2>Copyright Information</h2>
+                <h2 class="h2-title">Copyright Information</h2>
                 <p>All rights are reserved.</p>
             </section>
         </footer>
