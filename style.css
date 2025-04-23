@@ -1,0 +1,29 @@
+/* All the pre-built stuff */
+:root{
+    --main-color: rgb(145, 40, 40);
+}
+
+body{
+    background-color: #fff0db;
+}
+
+/* Meeting Minutes title */
+.title{
+    color: var(--main-color, black);
+    background-color: color-mix(in srgb, brown 40%, white 60%);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30%;
+}
+
+.h2-title{
+    color:hsl(30, 87%, 37%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* coloring the table of contents text*/
+#table-of-contents{
+    color: brown;
+    background-color: color(display-p3 0.2 0.6 0.8);
+    width: 18%;
+    font-family: Arial, Helvetica, sans-serif;
+}
